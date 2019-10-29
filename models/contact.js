@@ -27,7 +27,7 @@ contactSchema.plugin(uniqueValidator)
 const Contact = mongoose.model('Contact', contactSchema)
 
 contactSchema.set('toJSON', {
-  transform: (doc, returnedObject) => {
+  transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()
     delete returnedObject._id
     delete returnedObject.__v
