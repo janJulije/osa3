@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const morgan = require('morgan')
+const morgan = require('./local_modules/morgan')
 const cors = require('cors')
 
 const Contact = require('./models/contact')
