@@ -29,7 +29,7 @@ if (process.argv.length === 3) {
       mongoose.connection.close()
     })
   })
-  
+
 } else {
   const contact = new Contact({
     name: process.argv[3],

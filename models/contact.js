@@ -24,8 +24,6 @@ const contactSchema = new mongoose.Schema({
 })
 contactSchema.plugin(uniqueValidator)
 
-const Contact = mongoose.model('Contact', contactSchema)
-
 contactSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()

@@ -9,11 +9,13 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "Markus Kerminen",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^6.6.0",
     "nodemon": "^1.19.4"
   },
   "dependencies": {
